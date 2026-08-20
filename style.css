@@ -1,0 +1,165 @@
+/* comentario */
+
+/* FORMATAÇÃO DA MINHA PÁGINA  */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Jim+Nightshade&family=Michroma&display=swap');
+
+*{
+    /* isso afeta todo o site */
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: linear-gradient(to right, #14ccfe, #096bce);
+    padding: 0;
+    font-family: Michroma;
+    color: #F0FFFF;
+    /* cor da fonte */
+}
+.cabecalho{
+    background-color: #318CE7;
+    padding: 20px 40px;
+    /* aumenta o FUNDO, o ESPAÇAMENTO */
+    display: flex;
+    /* faz com que cada um fique do lado do outro */
+    justify-content: space-between;
+    /* coloca cada filho separado */
+    align-items: center;
+    border-bottom: 1px solid #007FFF;
+    /* fazendo uma linha inferior */
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    /* definindo a espessura em negrito */
+    color: aqua;
+    position: relative;
+    margin-right: 50px;
+}
+
+.menu a{
+    /* formatando todos os "a"s dentro da classe menu*/
+    color: #90e0ef;
+    text-decoration: none;
+    /* tirando aquela linha que fica debaixo do link */
+    margin-left: 50px;
+    /* desgrudando ele do canto esquerdo */
+    font-weight: bold;
+    transition: color 0.6s ease;
+    /* nao sei pq ta ficando embaixo */
+}
+.container{
+    max-width: 1200px;
+    /* largura maxima da tela */
+    /* ele vai ter um limite de tamanho independente da tela */
+    margin: 40px auto;
+    /* margem */
+    /* o "auto" significa que a direita e a esquerda ainda fica "grudado na imagem" */
+    /* aparentemente ele só fica mais grudado pra esquerda msm*/
+    /* as coisad que estao la dentro nao vao ficar colados na borda */
+    padding: 0 20px;
+    /* "margem interna" */
+    /* a separação da margem */
+
+}
+.titulo-secao{
+    font-size: 37px;
+    margin-bottom: 5px;
+    color: #FEFEFA;
+    text-align: center;
+}
+.subtitulo{
+    color: #F8F8FF;
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* afasta as imagens */
+    text-align: center;
+}
+.grade-filmes{
+    display: grid;
+    /* vai organizar todos os elementos (filhos) em linhas e colunas  */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* pra deixar tudo na horizontal */
+    gap: 25px;
+}
+.card-filme{
+    background-color: #00BFFF;
+    border-radius: 10px;
+    /* Fazendo borda no paranaue em volta da imagem */
+    overflow: hidden;
+    transition: color 0.6s ease;
+    box-shadow: 0 4px 12px #00BFFF;
+    display: flex;
+    flex-direction: column;
+    /* muda o eixo (dispkay flex -> texto some. flex-direction column -> texto volta) */
+
+    transition: transform 0.8s ease;
+}
+.card-filme:hover{
+    transform: translateY(-100px);
+    transition: color 1s ease;
+    box-shadow: 0 4px 12px #d1d8da;
+    
+}
+.poster{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    /* garante que todas as imagens fiquem com a altura perfeita */
+}
+img{
+    width: 300px;
+    border-radius: 10px;
+    height: 400px;
+}
+.conteudo-filme{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* estica verticalmente eempurra o botao para base */
+}
+.genero{
+    font-size: 12px;
+    color: #318CE7;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.nome-filme{
+    margin: 5px 0 10px 0;
+}
+.sinopse{
+    font-size: 14px;
+    color: #F8F8FF;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.sessoes{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.horario{
+    display: inline-block;
+    background-color: #0083af;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-left: 4px;
+    color: #F0FFFF;
+    font-weight: bold;
+}
+.botao-comprar{
+    display: block;
+    text-align: center;
+    background-color: #1459fa;
+    color: #F8F8FF;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botao-comprar:hover{
+    background-color: #148bfa;
+}   
