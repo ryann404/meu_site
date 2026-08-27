@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="CineSENAI (1).png">
+</head>
+<body>
+    <!-- corpo do site -->
+    <header class="cabecalho">
+    <!-- cabeçalho -->
+        <div class="logo">
+            <!-- bloco para codigos / divisao do site -->
+            CineSENAI
+            <nav class="menu">
+                <a href="index.html">Em Cartaz</a>
+                <a href="contato.html" class="selecionado">Contato</a>
+                <a href="emBreve.html">Em Breve</a>
+                <a href="garantirIngresso.html">Preços</a>
+            </nav>
+        </div>
+    </header> 
+    
+    <main class="container">
+        <h1>Cadastro para Recomendações de Filmes</h1>
+        <p>Preecha seus dados para realizar a inscrição do CineSENAI</p>
+        
+        
+        <div class="areaInscricao">
+            
+            <form action="/processar-cadastro" method="post" class="colunaForm">
+                
+                <!-- ------------------ NOME ---------------------------------------- -->
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo: " required minlength="3" maxlength="50">
+                <br>
+                <!-- precisa de uma tage para saber que é um nome, pra isso existe o "name" -->
+                
+                <!-- ------------------ SENHA ---------------------------------------- -->
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Digite uma senha forte: " required minlength="8" maxlength="15">
+                <br>
+
+                <!-- ------------------ EMAIL ---------------------------------------- -->
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="exemplo@dominio.com" required>
+                <br>
+
+                <!-- ------------------ DATA NASCIMENTO ---------------------------------------- -->
+                <label for="dataNasc">Data do nascimento: </label>
+                <input type="date" name="dataNasc" id="dataNasc" placeholder="Digite sua data de nascimento: " min="1900-01-01" max="2026-12-31" required>
+                <br><br><br>
+
+
+                
+
+                
+                <!-- ------------------ PERÍODO DOS FILMES ---------------------------------------- -->
+                <label>Período dos Filmes: </label>
+                
+                <br>
+                
+                <!-- ------------------ MANHA ---------------------------------------- -->
+                <input type="radio" name="turno" id="turnoManha" value="manha" required>
+                <label for="turnoManha">Manhã</label>
+                
+                <br>
+                
+                <!-- ------------------ TARDE ---------------------------------------- -->
+                <input type="radio" name="turno" id="turnoTarde" value="tarde" required>
+                <label for="turnoTarde">Tarde</label>
+                
+                <br>
+                
+                <!-- ------------------ NOITE ---------------------------------------- -->
+                <input type="radio" name="turno" id="turnoNoite" value="noite" required>
+                <label for="turnoTarde">Noite</label>
+                <!-- se o name do turnoTarde, TurnoNoite e turnoManha forem diferentes, eles podem ser selecionados juntos -->
+                
+                
+
+                <br><br><br>
+                <!-- ------------------ Filmes de interesse ---------------------------------------- -->
+                <label>Filmes de Interesse</label>
+                
+                
+                <!-- ------------------ AÇÃO ---------------------------------------- -->
+
+                <input type="checkbox" name="interesse" id="acao">
+                <label for="acao">Filme de Ação</label>
+                <br>
+                
+                <!-- ------------------ COMÉDIA ---------------------------------------- -->
+                <input type="checkbox" name="interesse" id="comedia">
+                <label for="comedia">Filme de Comédia</label>
+                <br>
+                
+                <!-- ------------------ TERROR ---------------------------------------- -->
+                <input type="checkbox" name="interesse" id="terror">
+                <label for="terror">Filme de Terror</label>
+                <br>
+                <br>
+                
+                
+                <!-- ------------------- Selecionar unidade ---------------------------------------- -->
+                <label for="unidade">Selecione a Unidade do Cinema: </label>
+                
+                <select name="unidade" id="unidade" required>
+
+                    <option value="" disa selected>Selecione um Cinema</option>
+                    <option value="sp">São Paulo - Capital</option>
+                    <option value="votuporanga">Votuporanga</option>
+                    <option value="sebastianopolis">Sebastianópolis do Sul</option>
+                    <option value="valentim">Valentim</option>
+                    <option value="parisi">Parisi</option>
+                    <option value="vilaCarvalho">Vila Carvalho</option>
+                    <option value="Simonsen">Simonsen</option>
+
+                </select>
+                <br><br>
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Li e Aceito os Termos</label>
+
+                <button type="submit" class="btnEnviar">Enviar</button>
+                <button type="reset" class="btnLimpar">Limpar Tudo</button>
+                
+            </form>
+            <!-- action = onde vai ser armazenado o formulario -->
+            <div class="colunaMidia"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5525.53797360967!2d-49.92918627005194!3d-20.657384982115513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd64b1f3d46219%3A0x983ea8986b35a770!2sSebastian%C3%B3polis%20do%20Sul%2C%20SP%2C%2015180-000!5e1!3m2!1spt-BR!2sbr!4v1787665705579!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            
+
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/DBagKdhTklI?si=8zol1l0vnaOvvYPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+                        <!-- <iframe width="700" height="400" src="https://diekmann.github.io/wasm-fizzbuzz/doom/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ru4rhdbCMVA?si=otYlTpz1NHzByV0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- no google maps, youtube, sla -> compartilhar -> icorporar -> copiar -->
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
