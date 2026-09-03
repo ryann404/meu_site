@@ -282,3 +282,34 @@ h2{
     margin: 0 auto;
     margin-top: 40px;
 }
+.tabelaCardapio{
+    width: 80%;
+}
+.tabelaPreco{
+    width: 100%;
+    /* vai ocupar 100% da tabelaCardapio */
+    background-image: linear-gradient(to right, #4861d3, #0033ff);
+    font-size: 15px;
+    text-align: left;
+}
+.tabelaPreco th{
+    background-color: #4545f6;
+    color: #04c9ff;
+    padding: 16px 20px;
+    /* ;regra: cima, direita, baixo, esquerda */
+    /* fazendo um espaçamento entre as linhas */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* deixando em maiusculo */
+    border-bottom: 2px solid #14ccfe;
+}
+.tabelaPreco td{
+    padding: 16px 20px;
+    /* espaçamento interno */
+
+    border-bottom: 1px solid #2b3032;
+    /* borda debaixo */
+
+    color: #F8F8FF;
+}
